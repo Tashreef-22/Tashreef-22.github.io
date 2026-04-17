@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Pastries of Lidl</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+    }
+
+    header {
+        background: #0050aa;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        background: #003f88;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #ffd700;
+    }
+
+    /* CONTENT AREA */
+    .content {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* TEXT BUBBLES */
+    .bubble {
+        background: white;
+        padding: 20px;
+        width: 70%;
+        max-width: 600px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+        /* fade in */
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+    }
+
+    /* delay each bubble */
+    .bubble:nth-child(1) { animation-delay: 0.3s; }
+    .bubble:nth-child(2) { animation-delay: 0.6s; }
+    .bubble:nth-child(3) { animation-delay: 0.9s; }
+
+    /* fade animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    footer {
+        background: #003f88;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>The Pastries of Lidl</h1>
+</header>
+
+
+<nav>
+    <a href="page%202.HTML">🥐 Pastries</a>
+</nav>
+
+<div class="content">
+
+    <div class="bubble">
+        <h2>🥐 Fresh Bakery Everyday</h2>
+        <p>Lidl stores are known for their in-store bakeries that bake fresh goods throughout the day.</p>
+    </div>
+
+    <div class="bubble">
+        <h2>🍩 Popular Items</h2>
+        <p>Croissants, donuts, pretzels, and fresh bread are some of the most popular bakery items.</p>
+    </div>
+
+    <div class="bubble">
+        <h2>⭐ Why People Love It</h2>
+        <p>Customers love Lidl bakeries because they are cheap, fresh, and always available.</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Lidl Fan Website</p>
+</footer>
+
+</body>
+</html>
